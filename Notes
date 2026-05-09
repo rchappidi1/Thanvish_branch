@@ -29,3 +29,10 @@ we have to add the repository to the branch below is the command
 1st we have to find the last commit in that branch and based on that we have to apply the get reflog and then identify that HEAD*{} then use the below command
 -->git checkout -b Thanvish_web_application HEAD{1} : here -b will create the new branch based on the deleted one and HEAD{0} will identify the last commit and retrive the data.
 
+--> git reset 3 command are there 
+1) git reset soft (followed by commit number)    Based on the commit number it will set it back to staging area.(1 step back) 
+2) git reset mixed (followed by commit number)    Based on the commit number it will set it back to working area . ( 2 steps back)
+3) git reset hard  (followed by commit number)    Based on the commit number it will delete the entire commit. ( delete the file based on the commit number)
+examples:   git reset soft 8ab569041b994c611bd14c82 (4th commit will be 1step back)
+            git reset mixed 8ab569041b994c611bd14c82 (4th commit will be 2 steps back)
+            git reset hard 8ab569041b994c611bd14c82  (4th commit will be deleted)
