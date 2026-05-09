@@ -1,27 +1,31 @@
 Account config:
 
-git config --global user.name "Your Name"
-git config --global user.email "your_email@example.com"
-git config list # checking for user configuration details 
+--> git config --global user.name "Your Name"
+--> git config --global user.email "your_email@example.com"
+--> git config list # checking for user configuration details 
 
-git status # to check the files or folder status
-git log # we can check the how many commits are done by the users updating the code.
-git add . # move all files from working area to staging area ( files are in green colour after applying the git add . command before that the files are red colour)
-git commit -m " comment " # move all files from staging area to git repository ( no colour in files)
+--> git status # to check the files or folder status
+--> git log # we can check the how many commits are done by the users updating the code.
+--> git add . # move all files from working area to staging area ( files are in green colour after applying the git add . command before that the files are red colour)
+--> git commit -m " comment " # move all files from staging area to git repository ( no colour in files)
 
-Git Branch Development # to create the Development Branch
-git checkout Development # to moving the current branch to Development
+--> git Branch Development # to create the Development Branch
+--> git checkout Development # to moving the current branch to Development
 
-git checkout -b Thanvish_web_application # it will create a branch and it will move to that new branch (Thanvish_web_application) ( here we can do point 12 and 13 at same time)
+--> git checkout -b Thanvish_web_application # it will create a branch and it will move to that new branch (Thanvish_web_application) ( here we can do point 12 and 13 at same time)
 
-git merge Development   # to merge the files from Development to master if we are in master branch. 
+--> git merge Development   # to merge the files from Development to master if we are in master branch. 
 
-git branch -D Development # to delete Development branch. 
+--> git branch -D Development # to delete Development branch. 
 
-git show head example # is used for cheking the example file data. 
+--> git show head example # is used for cheking the example file data. 
 --> git push # we can not directly push the file to the repository first
 we have to add the repository to the branch below is the command
 -- > git remote add origin https://github.com/rchappidi1/Thanvish_branch.git
 
-git push origin master # to upload the files to the git branch repository.
-git reflog # we can easily identify the head for the commit. example : 
+--> git push origin master # to upload the files to the git branch repository.
+
+--> git reflog # we can easily identify the head for the commit. example : We deleted the some branches in git so we have to recovery those data from the branch
+1st we have to find the last commit in that branch and based on that we have to apply the get reflog and then identify that HEAD*{} then use the below command
+-->git checkout -b Thanvish_web_application HEAD{1} : here -b will create the new branch based on the deleted one and HEAD{0} will identify the last commit and retrive the data.
+
