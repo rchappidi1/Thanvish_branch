@@ -11,7 +11,12 @@ git commit -m " comment " # move all files from staging area to git repository (
 
 Git Branch Development # to create the Development Branch
 git checkout Development # to moving the current branch to Development
+
+git checkout -b Thanvish_web_application # it will create a branch and it will move to that new branch (Thanvish_web_application) ( here we can do point 12 and 13 at same time)
+
 git merge Development   # to merge the files from Development to master if we are in master branch. 
+
+git branch -D Development # to delete Development branch. 
 
 git show head example # is used for cheking the example file data. 
 --> git push # we can not directly push the file to the repository first
@@ -19,4 +24,4 @@ we have to add the repository to the branch below is the command
 -- > git remote add origin https://github.com/rchappidi1/Thanvish_branch.git
 
 git push origin master # to upload the files to the git branch repository.
-
+git reflog # we can easily identify the head for the commit. example : 
