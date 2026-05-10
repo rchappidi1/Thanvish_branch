@@ -69,4 +69,8 @@ git diff (1st cammit no) (2nd cammit no) # here we can observe that difference b
 
 git tag -a < tag name > -m " comment for tag " <commit number> # here we can add the tags for the respective commit. 
 
-git push <branch name> tag <tag name like v1.0.0.0> # here we push the tag to the repository. 
+git push <branch name> tag <tag name like v1.0.0.0> # here we push the tag to the repository.
+
+git commit --amend # it is Useful if you forgot to add a file, or want to change the latest commit message. Instead of creating a new commit, it rewrites the last one.
+
+
