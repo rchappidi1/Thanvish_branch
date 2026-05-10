@@ -48,3 +48,14 @@ Revert currently in progress.
   (run "git revert --continue" to continue)
   (use "git revert --skip" to skip this patch)
   (use "git revert --abort" to cancel the revert operation)
+
+git stash  mostly used we are working on Development and we got some issue in production. So we have to save the  develpment work for hours in slack area for that we will use git stash commands. Below are the git stash commands. 
+
+git stash save # to save the file in slack area 
+git stash list  # to check the list of files in slack area
+git stash show # to Display what changes are inside a stash.
+git stash apply #	Reapply the most recent stash (keeps stash in stack). it will bring the file from slack area to working area
+git stash pop stash@{n} 	 # Reapply and remove the most recent stash from the stash list
+git stash drop stash@{n} #	Delete a specific stash entry.
+git stash clear	Remove all stashes.
+git diff 
