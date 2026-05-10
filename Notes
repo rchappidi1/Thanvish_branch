@@ -44,3 +44,7 @@ Example : the code is present in git hub. we have to do some modification in tha
 So we have to delete some commints (4,5 commits)
 
 git revert HEAD 8ab5690 # it will delete that commit in git hub and local repository.
+Revert currently in progress.
+  (run "git revert --continue" to continue)
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
