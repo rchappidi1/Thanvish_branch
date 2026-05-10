@@ -6,6 +6,9 @@ Account config:
 
 --> git status # to check the files or folder status
 --> git log # we can check the how many commits are done by the users updating the code.
+
+--> git log --oneline # it is used for short form of commits in a single line and also we can easily find the commit ids. 
+
 --> git add . # move all files from working area to staging area ( files are in green colour after applying the git add . command before that the files are red colour)
 --> git commit -m " comment " # move all files from staging area to git repository ( no colour in files)
 
@@ -58,4 +61,14 @@ git stash apply #	Reapply the most recent stash (keeps stash in stack). it will 
 git stash pop stash@{n} 	 # Reapply and remove the most recent stash from the stash list
 git stash drop stash@{n} #	Delete a specific stash entry.
 git stash clear	Remove all stashes.
-git diff 
+git diff (1st cammit no) (2nd cammit no) # here we can observe that difference b/w 1st cammit and 2nd cammit, what are the line which are shown in the green colour those are latest updated line and what are line which are present in red colour those are deleted lines and what are the lines which are present in white colour those are previous lines. 
+
+--> git log -p # here we can easily find the every changes in the commit
+
+--> git log --stat # is used for getting the how many lines are updated / deleted / modified in the file. 
+
+
+git tag -a < tag name > -m " comment for tag " <commit number> # here we can add the tags for the respective commit. 
+
+
+git push <branch name> tag <tag name like v1.0.0.0> # here we push the tag to the repository. 
