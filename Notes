@@ -38,7 +38,7 @@ examples:   git reset --soft 8ab569041b994c611bd14c82 (4th commit will be 1step 
             git reset --mixed 8ab569041b994c611bd14c82 (4th commit will be 2 steps back)
             git reset-- hard 8ab569041b994c611bd14c82  (4th commit will be deleted)
 
---> git revert # we mainly used for when the worng code is pushed to git repository.So we have to delete that worng code in that case we can use git revert
+--> git revert # we mainly used for when the wrong code is pushed to git repository.So we have to delete that worng code in that case we can use git revert
 git revert HEAD ( followed by commit number)
 Example : the code is present in git hub. we have to do some modification in that code. 
 So we have to delete some commints (4,5 commits)
